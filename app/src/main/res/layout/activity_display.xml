@@ -4,33 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#60bab5"
     tools:context=".DisplayActivity">
 
     <TextView
         android:id="@+id/phone_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@color/user_itemview_phone_textview_background"
+        android:textSize="@dimen/user_itemview_phone_textview_textSize"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/email_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/email_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@color/user_itemview_email_textview_background"
+        android:textSize="@dimen/user_itemview_email_textview_textSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/address_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/address_text_view"
-        app:layout_constraintTop_toBottomOf="@id/phone_text_view"/>
+        app:layout_constraintTop_toBottomOf="@id/phone_text_view" />
 
     <TextView
         android:id="@+id/address_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/email_text_view"
+        android:background="@color/user_itemview_address_textview_background"
+        android:textSize="@dimen/user_itemview_address_textview_textSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/email_text_view" />
 
 </android.support.constraint.ConstraintLayout>

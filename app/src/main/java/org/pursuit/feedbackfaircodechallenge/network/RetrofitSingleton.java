@@ -9,8 +9,8 @@ public class RetrofitSingleton {
 
     private static Retrofit oneInstance;
 
-    public static Retrofit getOneInstance(){
-        if(oneInstance != null){
+    public static Retrofit getOneInstance() {
+        if (oneInstance != null) {
             return oneInstance;
         }
         oneInstance = new Retrofit.Builder()
@@ -20,5 +20,6 @@ public class RetrofitSingleton {
         return oneInstance;
     }
 
-    private RetrofitSingleton(){}
+    private RetrofitSingleton() {
+    }
 }

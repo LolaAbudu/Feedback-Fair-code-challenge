@@ -28,12 +28,8 @@ import retrofit2.Retrofit;
 public class FirstFragment extends Fragment {
 
     private static final String FIRST_LAST_NAME = "name";
-    //private static final String ARG_PARAM2 = "param2";
 
     private String name;
-    //private String mParam2;
-
-    private TextView nameTextView;
 
     public FirstFragment() {
         // Required empty public constructor
@@ -48,7 +44,6 @@ public class FirstFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             name = getArguments().getString(FIRST_LAST_NAME);
-            //mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
@@ -56,7 +51,6 @@ public class FirstFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_first, container, false);
     }
 
@@ -68,7 +62,7 @@ public class FirstFragment extends Fragment {
 
         Retrofit retrofit = RetrofitSingleton.getOneInstance();
         UserService userService = retrofit.create(UserService.class);
-        Call<List<Users>>usersCall = userService.getAllUsers();
+        Call<List<Users>> usersCall = userService.getAllUsers();
         usersCall.enqueue(new Callback<List<Users>>() {
             @Override
             public void onResponse(Call<List<Users>> call, Response<List<Users>> response) {
@@ -83,21 +77,9 @@ public class FirstFragment extends Fragment {
             }
 
             @Override
-            public void onFailure(Call<List<Users>>call, Throwable t) {
+            public void onFailure(Call<List<Users>> call, Throwable t) {
                 Log.d("TAG", "onFailure " + t.toString());
             }
         });
     }
-
-//    @Override
-//    public void onAttach(Context context) {
-//        super.onAttach(context);
-//        if (context instanceof OnFragmentInteractionListener) {
-//            mListener = (OnFragmentInteractionListener) context;
-//        } else {
-//            throw new RuntimeException(context.toString()
-//                    + " must implement OnFragmentInteractionListener");
-//        }
-//    }
-
 }

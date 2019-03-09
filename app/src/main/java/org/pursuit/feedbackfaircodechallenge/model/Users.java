@@ -11,15 +11,6 @@ public class Users {
     private Address address;
     private String phone;
 
-//    public Users(){}
-//
-//    public Users(String name, String email, Address address, String phone) {
-//        this.name = name;
-//        this.email = email;
-//        this.address = address;
-//        this.phone = phone;
-//    }
-
     public String getName() {
         return name;
     }

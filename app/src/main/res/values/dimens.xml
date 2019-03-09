@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="user_itemview_name_text_view_hint">30sp</dimen>
+    <dimen name="user_itemview_cardview_cardElevation">8dp</dimen>
+    <dimen name="user_itemview_cardview_cardCornerRadius">16dp</dimen>
+    <dimen name="user_itemview_cardview_marginTop">16dp</dimen>
+    <dimen name="user_itemview_constraintLayout_height">100dp</dimen>
+    <dimen name="user_itemview_phone_textview_textSize">24sp</dimen>
+    <dimen name="user_itemview_email_textview_textSize">24sp</dimen>
+    <dimen name="user_itemview_address_textview_textSize">24sp</dimen>
+</resources>

@@ -32,7 +32,6 @@ public class DisplayActivity extends AppCompatActivity {
         phone = getIntent().getStringExtra(UserViewHolder.PHONE_KEY);
         address = getIntent().getStringExtra(UserViewHolder.ADDRESS_KEY);
 
-
         emailTextView.setText("Email: " + email);
         phoneTextView.setText("Phone: " + phone);
         addressTextView.setText("Address: " + address);
@@ -52,6 +51,5 @@ public class DisplayActivity extends AppCompatActivity {
                 v.getContext().startActivity(intent);
             }
         });
-
     }
 }

@@ -3,4 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="user_itemview_cardview_backgroundColor">#9af4dc</color>
+    <color name="user_itemview_phone_textview_background">#cce2e1</color>
+    <color name="user_itemview_email_textview_background">#cce2e1</color>
+    <color name="user_itemview_address_textview_background">#cce2e1</color>
+    <color name="fragment_first_recyclerview_background">#00ffec</color>
 </resources>

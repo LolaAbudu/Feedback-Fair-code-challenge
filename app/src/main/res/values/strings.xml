@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Feedback Fair code challenge</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_itemview_name_textvieww_hint">name textview</string>
+    <string name="activitiy_main_frameLayout_hint">Hello World!</string>
 </resources>
